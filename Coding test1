@@ -1,0 +1,71 @@
+package Labtest;
+
+import java.util.Scanner;
+
+public class cMartsComplex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter number of the items: ");
+		double itemA = sc.nextDouble();
+		
+		System.out.println("Enter the price of the first item: ");
+		double priceA = sc.nextDouble();
+		System.out.println("Enter the quantity of the first item: ");
+		int quantityA = sc.nextInt();
+		
+		double totA = (priceA * quantityA);
+		System.out.println("PriceA: " + totA);
+		
+		System.out.println("\n");
+		
+		System.out.println("Enter the price of the second item: ");
+		double priceB = sc.nextDouble();
+		System.out.println("Enter the quantity of the second item: ");
+		double quantityB = sc.nextDouble();
+		
+		double totB = (priceB * quantityB);
+		System.out.println("PriceB: " + totB);
+		
+		System.out.println("\n");
+		
+		System.out.println("Enter the price of the third item: ");
+		double priceC = sc.nextDouble();
+		System.out.println("Enter the quantity of the third item: ");
+		double quantityC = sc.nextDouble();
+		
+		double totC = (priceC * quantityC);
+		System.out.println("PriceC: " + totC);
+		
+		System.out.println("\n");
+		
+		double total = (totA + totB + totC);
+		System.out.println("Total price: " + total);
+		
+		double disA = (0.2 * total);
+		double disB = (0.1 * total);
+		double payA = total - disA;
+		double payB = total - disB;
+		
+		if (total > 100) {
+			System.out.println("Total discount in RM: " + disA);
+			System.out.println("Price to pay is " + payA);
+			
+		}
+		
+		else if (total < 100) {
+			System.out.println("Total discount in RM: " + disB);
+			System.out.println("Price to pay is " + payB);
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
