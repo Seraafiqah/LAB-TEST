@@ -1,0 +1,56 @@
+package Labtest;
+
+import java.util.Scanner;
+
+public class phoneKiosk {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		
+		int hour;
+		int sales;
+		int commission;
+		double wages = 5.00;
+		double totpaid;
+		double dailypaid;
+		
+		System.out.println("Enter your sales: RM");
+		sales = sc.nextInt();
+		System.out.println("Enter your work hour: ");
+		hour = sc.nextInt();
+		
+		if ((sales >= 150) && (sales <= 300)) {
+			commission = (sales * 5/100);
+			System.out.println("Total commission is: RM" + commission);
+			totpaid = hour*wages;
+			dailypaid = totpaid + commission;
+		System.out.println("Total daily wages is: RM" + dailypaid);
+			
+		}
+		
+		if ((sales >= 301) && (sales <= 500)) {
+			commission = (sales * 10/100);
+			System.out.println("Total commission is: Rm" + commission);
+			totpaid = hour*wages;
+			dailypaid= totpaid + commission;
+		System.out.println("Total daily wages is: RM" + dailypaid);
+		
+		}
+		
+		else if (sales > 500) {
+			commission = (sales * 15/100);
+			System.out.println("Total commission is: RM" + commission);
+			totpaid = hour*wages;
+			dailypaid = totpaid + commission;
+		System.out.println("Total daily wages is: RM" + dailypaid);
+		}
+	}
+}
+	
+
+
+
+	
+
+
