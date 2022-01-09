@@ -1,0 +1,26 @@
+Enter number of the items: 
+3
+Enter the price of the first item: 
+150
+Enter the quantity of the first item: 
+2
+PriceA: 300.0
+
+
+Enter the price of the second item: 
+50
+Enter the quantity of the second item: 
+3
+PriceB: 150.0
+
+
+Enter the price of the third item: 
+30
+Enter the quantity of the third item: 
+1
+PriceC: 30.0
+
+
+Total price: 480.0
+Total discount in RM: 96.0
+Price to pay is 384.0
